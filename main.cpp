@@ -7,7 +7,7 @@ int main() {
     Rect r(4, 6);
     Square s(5);
     Circle c(3);
-
+    
     cout << "Triangle area = " << t.calcArea() << endl;
     cout << "Rectangle area = " << r.calcArea() << endl;
     cout << "Square area = " << s.calcArea() << endl;

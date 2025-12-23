@@ -33,15 +33,19 @@ public:
 };
 
 // ========== SQUARE (from RECT only) ==========
-class Square : public Rect {
+class Square : private Rect {
 public:
     Square(float side);
+    float calcArea() const {
+        return Rect::calcArea();
+    }
 };
 
 // ========== CIRCLE ==========
-class Circle : public GeoShape {
+class Circle : private GeoShape {
 public:
     Circle(float radius);
+    void setRedius(int r);
     float calcArea() const override;
 };
 
